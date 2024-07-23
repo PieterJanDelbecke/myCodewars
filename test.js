@@ -1,2 +1,4 @@
-console.log("Hello, World")
-console.log("just for one ather commit")
+if (true) {
+	console.log("hello World");
+	console.log("NEW");
+}
