@@ -1,0 +1,110 @@
+{
+  "identifier": "ids",
+  "description": "IDS",
+  "parameters": [
+    {
+      "identifier": "alarm",
+      "description": "Fire Alarm",
+      "endpoints": [
+        {
+          "type": "output",
+          "machineID": "IDS.Ember.Alarm",
+          "name": "Fire Alarm",
+          "dataType": "logic"
+        }
+      ],
+      "emberType": "boolean",
+      "readonly": true,
+      "value": false
+    }
+  ],
+  "children": [
+    {
+      "identifier": "s1",
+      "description": "Studio 1",
+      "parameters": [
+        {
+          "identifier": "mic",
+          "description": "Mic Live",
+          "endpoints": [
+            {
+              "type": "input",
+              "machineID": "IDS.Ember.Studio 1",
+              "name": "Mic Live",
+              "dataType": "logic"
+            }
+          ],
+          "emberType": "boolean",
+          "readonly": false,
+          "value": false
+        },
+        {
+          "identifier": "src",
+          "description": "Current Source",
+          "endpoints": [
+            {
+              "type": "input",
+              "machineID": "IDS.Ember.Studio 1",
+              "name": "Current Source",
+              "dataType": "text"
+            }
+          ],
+          "emberType": "string",
+          "readonly": false,
+          "value": ""
+        },
+        {
+          "identifier": "button",
+          "description": "Input Button",
+          "endpoints": [
+            {
+              "type": "output",
+              "machineID": "IDS.Ember.Studio 1",
+              "name": "Test",
+              "dataType": "logic"
+            }
+          ],
+          "emberType": "boolean",
+          "readonly": false,
+          "value": false
+        }
+      ]
+    },
+    {
+      "identifier": "s2",
+      "description": "Studio 2",
+      "parameters": [
+        {
+          "identifier": "on air",
+          "description": "On Air",
+          "endpoints": [
+            {
+              "type": "input",
+              "machineID": "IDS.Ember.Studio 2",
+              "name": "On Air",
+              "dataType": "logic"
+            }
+          ],
+          "emberType": "boolean",
+          "readonly": false,
+          "value": false
+        },
+        {
+          "identifier": "volume",
+          "description": "Volume Input",
+          "endpoints": [
+            {
+              "type": "input",
+              "machineID": "IDS.Ember.Studio 2",
+              "name": "Volume",
+              "dataType": "number"
+            }
+          ],
+          "emberType": "real",
+          "readonly": false,
+          "value": "62.5"
+        }
+      ]
+    }
+  ]
+}
