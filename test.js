@@ -1,4 +1,5 @@
-if (true) {
-	console.log("hello World");
-	console.log("NEW");
+function solution(str) {
+	return str.split("").reverse().join("");
 }
+
+console.log(solution("world"));
